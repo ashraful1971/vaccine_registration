@@ -65,7 +65,7 @@ This project is a web-based application where users can register for a vaccinati
 3. Set up your `.env` file with your database credentials, mail and queue configuration.
 4. Run `php artisan key:generate`.
 5. Run `php artisan migrate --seed` to set up the database and populate vaccine centers.
-6. Run `npm i` to bundle the assets.
+6. Run `npm i` to install the dependencies.
 7. Run `npm run build` to bundle the assets.
 8. Run `php artisan queue:listen` to start queue worker and listen.
 9. Add cron configuration to run the scheduler at regular interval. Example: `* * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1`
