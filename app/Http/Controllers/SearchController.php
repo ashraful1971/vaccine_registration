@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\SearchRequest;
-use App\Models\User;
+use App\Services\UserService;
 
 class SearchController extends Controller
 {
@@ -14,7 +14,7 @@ class SearchController extends Controller
 
     public function check(SearchRequest $request)
     {
-        $user = User::where('nid', $request->nid)->first();
+        $user = UserService::findByNid($request->nid);
 
         return view('status', compact('user'));
     }
