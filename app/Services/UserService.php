@@ -19,7 +19,7 @@ class UserService
         return true;
     }
     
-    public static function findByNid(string $nid): User
+    public static function findByNid(string $nid): ?User
     {
         return User::where('nid', $nid)->first();
     }
