@@ -74,5 +74,5 @@ This project is a web-based application where users can register for a vaccinati
 ## Testing
 
 You can test the registration and search functionality by:
-- Registering a user.
-- Checking the status of a user via the search page using the provided NID.
+- Run `php artisan test` to run the tests.
+- You can manually test it by registering and checking the status of a user via the search page using the provided NID.
