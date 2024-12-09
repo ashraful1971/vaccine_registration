@@ -73,9 +73,9 @@ This project is a web-based application where users can register for a vaccinati
 
 ## Admin Login
 
-**endpoint:** /admin
-**email:** admin@gmail.com
-**password:** 112233
+**endpoint:** /admin  
+**email:** admin@gmail.com  
+**password:** 112233  
 
 ## Testing
 
