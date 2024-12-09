@@ -16,11 +16,13 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('password')->nullable();
             $table->string('phone')->nullable();
             $table->string('nid')->unique();
             $table->foreignIdFor(VaccineCenter::class)->constrained();
             $table->timestamp('vaccine_scheduled_at')->nullable();
             $table->string('status')->default('not-scheduled');
+            $table->string('remember_token')->nullable();
             $table->timestamps();
         });
 

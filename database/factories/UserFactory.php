@@ -31,6 +31,7 @@ class UserFactory extends Factory
             'vaccine_center_id' => VaccineCenter::select('id')->inRandomOrder()->first()->id,
             'vaccine_scheduled_at' => null,
             'status' => 'not-scheduled',
+            'created_at' => $this->faker->dateTimeBetween('-7 day', 'now'),
         ];
     }
 

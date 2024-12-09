@@ -71,6 +71,12 @@ This project is a web-based application where users can register for a vaccinati
 9. Add cron configuration to run the scheduler at regular interval. Example: `* * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1`
 10. Start the server using `php artisan serve`.
 
+## Admin Login
+
+**endpoint:** /admin
+**email:** admin@gmail.com
+**password:** 112233
+
 ## Testing
 
 You can test the registration and search functionality by:
